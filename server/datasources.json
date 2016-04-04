@@ -1,0 +1,34 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mongo-storage": {
+        "host": "127.0.0.1",
+        "port": 27017,
+        "database": "alpha-lolipop",
+        "password": "",
+        "name": "mongo-storage",
+        "user": "",
+        "connector": "mongodb"
+    },
+    "emailDs": {
+        "name": "emailDs",
+        "connector": "mail",
+        "transports": [
+            {
+                "type": "smtp",
+                "host": "smtp.gmail.com",
+                "secure": true,
+                "port": 465,
+                "tls": {
+                    "rejectUnauthorized": false
+                },
+                "auth": {
+                    "user": "yogaygk@gmail.com",
+                    "pass": "Save4@ring"
+                }
+            }
+        ]
+    }
+}
