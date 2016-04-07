@@ -18,15 +18,12 @@
         "transports": [
             {
                 "type": "smtp",
-                "host": "smtp.gmail.com",
-                "secure": true,
-                "port": 465,
-                "tls": {
-                    "rejectUnauthorized": false
-                },
+                "host": "smtp.elasticemail.com",
+                "secureConnection": false,
+                "port": 2525,
                 "auth": {
                     "user": "yogaygk@gmail.com",
-                    "pass": "Save4@ring"
+                    "pass": "70f75a4c-3f39-4a15-bf72-9bc985e45fba"
                 }
             }
         ]

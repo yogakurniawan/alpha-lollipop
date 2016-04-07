@@ -21,14 +21,7 @@ module.exports = function(user) {
             if (err) return next(err);
 
             console.log('> verification email sent:', response);
-
-            context.res.render('response', {
-                title: 'Signed up successfully',
-                content: 'Please check your email and click on the verification link ' +
-                'before logging in.',
-                redirectTo: '/',
-                redirectToLinkText: 'Log in'
-            });
+            context.res.send(response);
         });
     });
 
