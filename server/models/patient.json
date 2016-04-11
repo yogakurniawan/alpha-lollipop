@@ -1,0 +1,69 @@
+{
+  "name": "patient",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "date",
+      "required": true
+    },
+    "gendercode": {
+      "type": "string",
+      "required": true
+    },
+    "mobilephone": {
+      "type": "string"
+    },
+    "homephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "officephone": {
+      "type": "string"
+    },
+    "patientnote": {
+      "type": "string"
+    },
+    "recordstatusid": {
+      "type": "number"
+    },
+    "patientphoto": {
+      "type": "string"
+    },
+    "createddate": {
+      "type": "date"
+    },
+    "updateddate": {
+      "type": "date"
+    },
+    "dod": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

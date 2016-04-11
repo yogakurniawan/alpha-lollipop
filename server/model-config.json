@@ -42,5 +42,9 @@
     "options": {
       "emailVerificationRequired": true
     }
+  },
+  "patient": {
+    "dataSource": "mongo-storage",
+    "public": true
   }
 }
