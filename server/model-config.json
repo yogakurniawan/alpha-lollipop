@@ -46,5 +46,9 @@
   "patient": {
     "dataSource": "mongo-storage",
     "public": true
+  },
+  "address": {
+    "dataSource": "mongo-storage",
+    "public": true
   }
 }

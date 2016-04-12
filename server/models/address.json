@@ -1,0 +1,47 @@
+{
+  "name": "address",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "addresstypeid": {
+      "type": "number"
+    },
+    "addressline1": {
+      "type": "string"
+    },
+    "addressline2": {
+      "type": "string"
+    },
+    "addressline3": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "statecode": {
+      "type": "string"
+    },
+    "countrycode": {
+      "type": "string"
+    },
+    "createddate": {
+      "type": "date"
+    },
+    "updateddate": {
+      "type": "date"
+    },
+    "recordstatusid": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

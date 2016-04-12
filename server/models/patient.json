@@ -21,6 +21,9 @@
       "type": "date",
       "required": true
     },
+    "dod": {
+      "type": "date"
+    },
     "gendercode": {
       "type": "string",
       "required": true
@@ -39,10 +42,7 @@
     },
     "patientnote": {
       "type": "string"
-    },
-    "recordstatusid": {
-      "type": "number"
-    },
+    },    
     "patientphoto": {
       "type": "string"
     },
@@ -52,8 +52,8 @@
     "updateddate": {
       "type": "date"
     },
-    "dod": {
-      "type": "date"
+    "recordstatusid": {
+      "type": "number"
     }
   },
   "validations": [],
