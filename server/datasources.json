@@ -1,31 +1,31 @@
 {
-    "db": {
-        "name": "db",
-        "connector": "memory"
-    },
-    "mongo-storage": {
-        "host": "127.0.0.1",
-        "port": 27017,
-        "database": "alpha-lolipop",
-        "password": "",
-        "name": "mongo-storage",
-        "user": "",
-        "connector": "mongodb"
-    },
-    "emailDs": {
-        "name": "emailDs",
-        "connector": "mail",
-        "transports": [
-            {
-                "type": "smtp",
-                "host": "smtp.elasticemail.com",
-                "secureConnection": false,
-                "port": 2525,
-                "auth": {
-                    "user": "yogaygk@gmail.com",
-                    "pass": "70f75a4c-3f39-4a15-bf72-9bc985e45fba"
-                }
-            }
-        ]
-    }
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo-storage": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "alpha-lolipop",
+    "password": "",
+    "name": "mongo-storage",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.elasticemail.com",
+        "secureConnection": false,
+        "port": 2525,
+        "auth": {
+          "user": "yogaygk@gmail.com",
+          "pass": "70f75a4c-3f39-4a15-bf72-9bc985e45fba"
+        }
+      }
+    ]
+  }
 }

@@ -40,6 +40,11 @@
       "type": "hasMany",
       "model": "patient",
       "foreignKey": "userid"
+    },
+    "addresses": {
+      "type": "hasMany",
+      "model": "address",
+      "foreignKey": "userid"
     }
   },
   "acls": [
