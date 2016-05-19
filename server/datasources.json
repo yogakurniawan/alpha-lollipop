@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "mongo-storage": {
-    "host": "127.0.0.1",
+    "host": "jello.modulusmongo.net",
     "port": 27017,
-    "database": "alpha-lolipop",
-    "password": "",
+    "database": "oqUdir7y",
+    "password": "password",
     "name": "mongo-storage",
-    "user": "",
+    "user": "alpha",
     "connector": "mongodb"
   },
   "emailDs": {
@@ -22,8 +22,8 @@
         "secureConnection": false,
         "port": 2525,
         "auth": {
-          "user": "yogaygk@gmail.com",
-          "pass": "70f75a4c-3f39-4a15-bf72-9bc985e45fba"
+          "user": "yoga.kwn@gmail.com",
+          "pass": "97b5d85a-7a6f-4f71-8b20-3e302255d148"
         }
       }
     ]
