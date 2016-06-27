@@ -59,6 +59,12 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "__get__patients"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "findById"
     }
   ],
   "methods": {}
