@@ -43,10 +43,10 @@ module.exports = function (user) {
     });
 
     user.afterRemote('login', function (ctx, userInstance, next) {
-        let userId = userInstance.userId.toString();
-        let userDb = user.findById(userId, function (err, userObject) {
+        var userId = userInstance.userId.toString();
+        var userDb = user.findById(userId, function (err, userObject) {
             if (!err) {
-                ctx.result = userObject;
+                ctx.result.userDetail = userObject;
                 next();
             }
         });        
