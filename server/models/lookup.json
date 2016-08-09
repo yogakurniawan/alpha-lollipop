@@ -1,0 +1,42 @@
+{
+  "name": "lookup",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lookupname": {
+      "type": "string",
+      "required": true
+    },
+    "lookupvalue": {
+      "type": "number",
+      "required": true
+    },
+    "lookuptext": {
+      "type": "string",
+      "required": true
+    },
+    "displayorder": {
+      "type": "number",
+      "required": true
+    },
+    "createddate": {
+      "type": "date",
+      "required": true
+    },
+    "updateddate": {
+      "type": "date",
+      "required": true
+    },
+    "recordstatusid": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -50,5 +50,9 @@
   "address": {
     "dataSource": "mongo-storage",
     "public": true
+  },
+  "lookup": {
+    "dataSource": "mongo-storage",
+    "public": true
   }
 }
