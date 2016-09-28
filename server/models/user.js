@@ -1,5 +1,6 @@
 var config = require('../../server/config.json');
 var path = require('path');
+var LoopBackContext = require('loopback-context');
 
 module.exports = function (user) {
     //send verification email after registration
@@ -42,6 +43,20 @@ module.exports = function (user) {
         });
     });
 
+    user.remoteMethod(
+        'loadAuth',
+        {
+            returns: {arg: 'currentUser', type: 'Object'},
+            http: { path: '/loadAuth', verb: 'get' }
+        });
+
+    //remote method
+    user.loadAuth = function (next) {
+        var ctx = LoopBackContext.getCurrentContext();
+        var currentUser = ctx && ctx.get('currentUser');
+        next(null, currentUser);
+    };
+
     user.afterRemote('login', function (ctx, userInstance, next) {
         var userId = userInstance.userId.toString();
         var userDb = user.findById(userId, function (err, userObject) {
@@ -49,6 +64,6 @@ module.exports = function (user) {
                 ctx.result.userDetail = userObject;
                 next();
             }
-        });        
+        });
     });
 };

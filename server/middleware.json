@@ -17,6 +17,8 @@
         "deny"
       ]
     },
+    "loopback-context#per-request": {
+    },
     "helmet#hsts": {
       "params": {
         "maxAge": 0,

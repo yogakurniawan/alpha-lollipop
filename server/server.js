@@ -2,6 +2,7 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var path = require('path');
 var bodyParser = require('body-parser');
+var LoopBackContext = require('loopback-context');
 
 var app = module.exports = loopback();
 
@@ -13,6 +14,26 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(loopback.token());
+
+app.use(function setCurrentUser(req, res, next) {
+  if (!req.accessToken) {
+    return next();
+  }
+
+  app.models.user.findById(req.accessToken.userId, function (err, user) {
+    if (err) {
+      return next(err);
+    }
+    if (!user) {
+      return next(new Error('No user with this access token was found.'));
+    }
+    var loopbackContext = LoopBackContext.getCurrentContext();
+    if (loopbackContext) {
+      loopbackContext.set('currentUser', user);
+    }
+    next();
+  });
+});
 
 app.start = function () {
   // start the web server
@@ -34,11 +55,11 @@ boot(app, __dirname, function (err) {
 
   // start the server if `$ node server.js`
   if (require.main === module)
-    // app.start();
+  // app.start();
   app.io = require('socket.io')(app.start());
   app.io.on('connection', function (socket) {
     console.log('a user connected');
-    socket.emit('news', {msg: `'Hello World!' from server`});
+    socket.emit('news', { msg: `'Hello World!' from server` });
     socket.on('chat message', function (msg) {
       console.log('message: ' + msg);
       app.io.emit('chat message', msg);
