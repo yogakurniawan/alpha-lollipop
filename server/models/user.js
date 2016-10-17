@@ -12,9 +12,9 @@ module.exports = function (user) {
             to: user.email,
             from: 'noreply@loopback.com',
             subject: 'Thanks for registering.',
-            // text: "Please verify your email address: {href}",
+            text: "{href}",
             template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-            redirect: '/verified',
+            redirect: 'http://localhost:3000/login',
             user: user
         };
 
