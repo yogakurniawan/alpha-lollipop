@@ -17,13 +17,13 @@
     "connector": "mail",
     "transports": [
       {
-        "type": "smtp",
-        "host": "smtp.elasticemail.com",
-        "secureConnection": false,
-        "port": 2525,
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
         "auth": {
-          "user": "yoga.kwn@gmail.com",
-          "pass": "97b5d85a-7a6f-4f71-8b20-3e302255d148"
+          "user": "yogaygk@gmail.com",
+          "pass": "Save4@ring"
         }
       }
     ]
