@@ -14,7 +14,7 @@ module.exports = function (user) {
             subject: 'Thanks for registering.',
             text: "{href}",
             template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-            redirect: 'http://localhost:3000/login',
+            redirect: 'http://localhost:3000/emailVerified',
             user: user
         };
 
