@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "0.0.0.0",
+  "host": "https://cerebral-api.herokuapp.com",
   "port": 9000,
   "remoting": {
     "context": {
