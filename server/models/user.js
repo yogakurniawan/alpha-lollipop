@@ -13,8 +13,9 @@ module.exports = function (user) {
             from: 'noreply@loopback.com',
             subject: 'Thanks for registering.',
             text: "{href}",
+            host: "https://cerebral-app.herokuapp.com",
             template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-            redirect: 'http://localhost:3000/emailVerified',
+            redirect: 'https://cerebral-app.herokuapp.com/emailVerified',
             user: user
         };
 
