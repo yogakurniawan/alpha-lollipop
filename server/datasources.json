@@ -18,11 +18,11 @@
     "transports": [
       {
         "type": "SMTP",
-        "host": "smtp.gmail.com",
-        "secure": true,
-        "port": 465,
+        "host": "smtp.pepipost.com",
+        "secureConnection": false,
+        "port": 2525,
         "auth": {
-          "user": "yogaygk@gmail.com",
+          "user": "yogakurniawan",
           "pass": "Save4@ring"
         }
       }
