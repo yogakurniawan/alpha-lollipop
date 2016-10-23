@@ -12,6 +12,10 @@
     "user": "alpha",
     "connector": "mongodb"
   },
+  "sendgrid": {
+    "connector": "loopback-connector-sendgrid",
+    "api_key": "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"
+  },
   "emailDs": {
     "name": "emailDs",
     "connector": "mail",
