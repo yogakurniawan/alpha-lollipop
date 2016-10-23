@@ -34,8 +34,7 @@
     "public": false
   },
   "Email": {
-    "dataSource": "sendgrid",
-    "public": false
+    "dataSource": "sendgrid"
   },
   "user": {
     "dataSource": "mongo-storage",
