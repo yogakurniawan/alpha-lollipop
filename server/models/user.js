@@ -10,6 +10,7 @@ module.exports = function (user) {
         var options = {
             type: 'email',
             to: user.email,
+            protocol: 'https:',
             from: 'noreply@loopback.com',
             subject: 'Thanks for registering.',
             text: "{href}",
