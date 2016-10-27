@@ -49,8 +49,16 @@ module.exports = function (user) {
     user.remoteMethod(
         'loadAuth',
         {
-            returns: {arg: 'currentUser', type: 'Object'},
+            returns: { arg: 'currentUser', type: 'Object' },
             http: { path: '/loadAuth', verb: 'get' }
+        });
+
+    user.remoteMethod(
+        'validateUsername',
+        {
+            accepts: { arg: 'username', type: 'string' },
+            returns: { arg: 'isValid', type: 'boolean' },
+            http: { path: '/validateusername', verb: 'post' }
         });
 
     //remote method
@@ -59,6 +67,24 @@ module.exports = function (user) {
         var currentUser = ctx && ctx.get('currentUser');
         next(null, currentUser);
     };
+
+    user.validateUsername = function (username, next) {
+        var userDb = user.find({
+            where: { username: username }
+        }, function (err, user) {
+            if (err) return;
+            if (user) {
+                var filteredUser = user.filter(function (obj) {
+                    return obj.username === username;
+                });
+                if (filteredUser.length > 0) {
+                    next(null, false);
+                } else {
+                    next(null, true);
+                }
+            }
+        });
+    }
 
     user.afterRemote('login', function (ctx, userInstance, next) {
         var userId = userInstance.userId.toString();

@@ -71,6 +71,12 @@
       "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "loadAuth"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "validateUsername"
     }
   ],
   "methods": {}
