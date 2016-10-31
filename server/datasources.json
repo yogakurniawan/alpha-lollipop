@@ -12,9 +12,6 @@
     "user": "alpha",
     "connector": "mongodb"
   },
-  "sendgridDs": {
-    "name": "sendgridDs"
-  },
   "emailDs": {
     "name": "emailDs",
     "connector": "mail",
