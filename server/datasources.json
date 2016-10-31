@@ -13,8 +13,7 @@
     "connector": "mongodb"
   },
   "sendgrid": {
-    "connector": "loopback-connector-sendgrid",
-    "api_key": ""
+    "name": "sendgridDs"
   },
   "emailDs": {
     "name": "emailDs",
