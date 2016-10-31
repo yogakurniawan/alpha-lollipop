@@ -12,7 +12,7 @@
     "user": "alpha",
     "connector": "mongodb"
   },
-  "sendgrid": {
+  "sendgridDs": {
     "name": "sendgridDs"
   },
   "emailDs": {
