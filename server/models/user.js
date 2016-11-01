@@ -6,7 +6,6 @@ module.exports = function (user) {
     //send verification email after registration
     user.afterRemote('create', function (context, user, next) {
         console.log('> user.afterRemote triggered');
-
         var options = {
             type: 'email',
             to: user.email,
@@ -23,10 +22,9 @@ module.exports = function (user) {
 
         user.verify(options, function (err, response) {
             if (err) return next(err);
-
             console.log('> verification email sent:', response);
-            context.res.send(response);
         });
+        context.res.send(response);
     });
 
     //send password reset link when requested
