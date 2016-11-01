@@ -24,6 +24,7 @@ module.exports = function (user) {
             if (err) return next(err);
             console.log('> verification email sent:', response);
             context.res.send(response);
+            next(response);
         });
     });
 
