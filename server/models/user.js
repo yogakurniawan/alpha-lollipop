@@ -23,8 +23,9 @@ module.exports = function (user) {
         user.verify(options, function (err, response) {
             if (err) return next(err);
             console.log('> verification email sent:', response);
+            context.res.send(response);
         });
-        context.res.send(response);
+        next();
     });
 
     //send password reset link when requested
