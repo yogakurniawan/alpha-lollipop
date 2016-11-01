@@ -14,7 +14,8 @@
   },
   "sendgrid": {
     "name": "sendgrid",
-    "connector": "loopback-connector-sendgrid"
+    "connector": "loopback-connector-sendgrid",
+    "api_key": ""
   },
   "emailDs": {
     "name": "emailDs",
