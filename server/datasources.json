@@ -10,7 +10,12 @@
     "password": "password",
     "name": "mongo-storage",
     "user": "alpha",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 1000
+    }
   },
   "sendgrid": {
     "name": "sendgrid",
