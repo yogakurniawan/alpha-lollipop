@@ -59,6 +59,14 @@ module.exports = function (user) {
             http: { path: '/validateusername', verb: 'post' }
         });
 
+    user.remoteMethod(
+        'validateEmail',
+        {
+            accepts: { arg: 'email', type: 'string' },
+            returns: { arg: 'isValid', type: 'boolean' },
+            http: { path: '/validateemail', verb: 'post' }
+        });
+
     //remote method
     user.loadAuth = function (next) {
         var ctx = LoopBackContext.getCurrentContext();
@@ -74,6 +82,24 @@ module.exports = function (user) {
             if (user) {
                 var filteredUser = user.filter(function (obj) {
                     return obj.username === username;
+                });
+                if (filteredUser.length > 0) {
+                    next(null, false);
+                } else {
+                    next(null, true);
+                }
+            }
+        });
+    }
+
+    user.validateEmail = function (email, next) {
+        var userDb = user.find({
+            where: { email: email }
+        }, function (err, user) {
+            if (err) return;
+            if (user) {
+                var filteredUser = user.filter(function (obj) {
+                    return obj.email === email;
                 });
                 if (filteredUser.length > 0) {
                     next(null, false);
