@@ -77,6 +77,12 @@
       "principalId": "$everyone",
       "permission": "ALLOW",
       "property": "validateUsername"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "validateEmail"
     }
   ],
   "methods": {}
