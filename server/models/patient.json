@@ -17,14 +17,14 @@
     "fullname": {
       "type": "string"
     },
-    "dob": {
+    "dateofbirth": {
       "type": "date",
       "required": true
     },
-    "dod": {
+    "dateofdeath": {
       "type": "date"
     },
-    "gendercode": {
+    "gender": {
       "type": "string",
       "required": true
     },
