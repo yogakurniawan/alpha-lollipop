@@ -9,11 +9,12 @@ module.exports = function (user) {
         var options = {
             type: 'email',
             to: user.email,
+            protocol: 'http',
             port: '443',
             from: 'noreply@loopback.com',
             subject: 'Thanks for registering.',
             text: "{href}",
-            host: "54.254.154.139:9000",
+            host: "http://54.254.154.139:9000",
             template: path.resolve(__dirname, '../../server/views/verify.ejs'),
             redirect: 'https://cerebral-app.herokuapp.com/emailVerified',
             user: user
