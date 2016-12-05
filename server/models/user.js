@@ -13,7 +13,7 @@ module.exports = function (user) {
             from: 'noreply@loopback.com',
             subject: 'Thanks for registering.',
             text: "{href}",
-            host: "http://54.254.154.139:9000",
+            host: "54.254.154.139:9000",
             template: path.resolve(__dirname, '../../server/views/verify.ejs'),
             redirect: 'https://cerebral-app.herokuapp.com/emailVerified',
             user: user
