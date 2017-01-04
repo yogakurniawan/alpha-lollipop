@@ -4,12 +4,10 @@
     "connector": "memory"
   },
   "mongo-storage": {
-    "host": "jello.modulusmongo.net",
+    "host": "52.221.230.61",
     "port": 27017,
-    "database": "oqUdir7y",
-    "password": "password",
+    "database": "local",
     "name": "mongo-storage",
-    "user": "alpha",
     "connector": "mongodb",
     "server": {
       "auto_reconnect": true,
