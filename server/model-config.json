@@ -55,5 +55,13 @@
   "lookup": {
     "dataSource": "mongo-storage",
     "public": true
+  },
+  "brand": {
+    "dataSource": "mongo-storage",
+    "public": true
+  },
+  "item": {
+    "dataSource": "mongo-storage",
+    "public": true
   }
 }

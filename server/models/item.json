@@ -1,0 +1,33 @@
+{
+  "name": "item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "imageurl": {
+      "type": "string"
+    },
+    "brandId": {
+      "type": "string",
+      "description": "Brand ID"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "brand": {
+      "type": "belongsTo",
+      "model": "brand",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
