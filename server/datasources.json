@@ -7,7 +7,7 @@
     "host": "52.221.230.61",
     "username": "admin",
     "password": "reactjs1234",
-    "port": 27017,
+    "port": 30590,
     "database": "admin",
     "name": "mongo-storage",
     "connector": "mongodb",
