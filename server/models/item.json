@@ -18,6 +18,12 @@
     "brandId": {
       "type": "string",
       "description": "Brand ID"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "lastModified": {
+      "type": "date"
     }
   },
   "validations": [],
