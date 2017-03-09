@@ -15,6 +15,9 @@
     "imageurl": {
       "type": "string"
     },
+    "detailurl": {
+      "type": "string"
+    },
     "brandId": {
       "type": "string",
       "description": "Brand ID"
