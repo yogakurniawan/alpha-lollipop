@@ -11,6 +11,18 @@
     },
     "totalProducts": {
       "type": "number"
+    },
+    "totalPage": {
+      "type": "number"
+    },
+    "firstUrl": {
+      "type": "string"
+    },
+    "nextUrl": {
+      "type": "string"
+    },
+    "logoUrl": {
+      "type": "string"
     }
   },
   "validations": [],

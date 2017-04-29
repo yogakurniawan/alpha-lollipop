@@ -22,17 +22,140 @@
       "type": "string",
       "description": "Brand ID"
     },
-    "keyword": {
+    "apiStatus": {
+      "type": "number"
+    },
+    "technology": {
       "type": "string"
     },
-    "createdDate": {
-      "type": "date"
+    "_2g_bands": {
+      "type": "string"
     },
-    "updatedDate": {
-      "type": "date"
+    "_3g_bands": {
+      "type": "string"
     },
-    "orderId": {
-      "type": "number"
+    "_4g_bands": {
+      "type": "string"
+    },
+    "gprs": {
+      "type": "string"
+    },
+    "edge": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "string"
+    },
+    "announced": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "sim": {
+      "type": "string"
+    },
+    "body_c": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "string"
+    },
+    "multitouch": {
+      "type": "string"
+    },
+    "protection": {
+      "type": "string"
+    },
+    "os": {
+      "type": "string"
+    },
+    "chipset": {
+      "type": "string"
+    },
+    "cpu": {
+      "type": "string"
+    },
+    "gpu": {
+      "type": "string"
+    },
+    "card_slot": {
+      "type": "string"
+    },
+    "intenal": {
+      "type": "string"
+    },
+    "primary": {
+      "type": "string"
+    },
+    "features": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "secondary": {
+      "type": "string"
+    },
+    "alert_types": {
+      "type": "string"
+    },
+    "loudspeaker_": {
+      "type": "string"
+    },
+    "_3_5mm_jack_": {
+      "type": "string"
+    },
+    "wlan": {
+      "type": "string"
+    },
+    "bluetooth": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
+    },
+    "nfc": {
+      "type": "string"
+    },
+    "infrared_port": {
+      "type": "string"
+    },
+    "radio": {
+      "type": "string"
+    },
+    "usb": {
+      "type": "string"
+    },
+    "sensors": {
+      "type": "string"
+    },
+    "messaging": {
+      "type": "string"
+    },
+    "browser": {
+      "type": "string"
+    },
+    "java": {
+      "type": "string"
+    },
+    "features_c": {
+      "type": "string"
+    },
+    "battery_c": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "string"
     }
   },
   "validations": [],
