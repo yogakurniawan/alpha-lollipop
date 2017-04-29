@@ -156,6 +156,21 @@
     },
     "colors": {
       "type": "string"
+    },
+    "sound_c": {
+      "type": "string"
+    },
+    "games": {
+      "type": "string"
+    },
+    "phonebook": {
+      "type": "string"
+    },
+    "call_records": {
+      "type": "string"
+    },
+    "display_c": {
+      "type": "string"
     }
   },
   "validations": [],
