@@ -61,10 +61,19 @@
     "sim": {
       "type": "string"
     },
+    "build": {
+      "type": "string"
+    },
     "body_c": {
       "type": "string"
     },
+    "keyboard": {
+      "type": "string"
+    },
     "type": {
+      "type": "string"
+    },
+    "size": {
       "type": "string"
     },
     "resolution": {
@@ -74,6 +83,9 @@
       "type": "string"
     },
     "protection": {
+      "type": "string"
+    },
+    "display_c": {
       "type": "string"
     },
     "os": {
@@ -91,10 +103,16 @@
     "card_slot": {
       "type": "string"
     },
-    "intenal": {
+    "phonebook": {
       "type": "string"
     },
-    "primary": {
+    "call_records": {
+      "type": "string"
+    },
+    "internal": {
+      "type": "string"
+    },
+    "primary_": {
       "type": "string"
     },
     "features": {
@@ -113,6 +131,9 @@
       "type": "string"
     },
     "_3_5mm_jack_": {
+      "type": "string"
+    },
+    "sound_c": {
       "type": "string"
     },
     "wlan": {
@@ -145,6 +166,18 @@
     "browser": {
       "type": "string"
     },
+    "clock": {
+      "type": "string"
+    },
+    "alarm": {
+      "type": "string"
+    },
+    "games": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
     "java": {
       "type": "string"
     },
@@ -154,22 +187,40 @@
     "battery_c": {
       "type": "string"
     },
+    "stand_by": {
+      "type": "string"
+    },
+    "talk_time": {
+      "type": "string"
+    },
+    "music_play": {
+      "type": "string"
+    },
+    "battery_life": {
+      "type": "string"
+    },
     "colors": {
       "type": "string"
     },
-    "sound_c": {
+    "sar_us": {
       "type": "string"
     },
-    "games": {
+    "sar_eu": {
       "type": "string"
     },
-    "phonebook": {
+    "performance": {
       "type": "string"
     },
-    "call_records": {
+    "display": {
       "type": "string"
     },
-    "display_c": {
+    "camera": {
+      "type": "string"
+    },
+    "loudspeaker": {
+      "type": "string"
+    },
+    "audio_quality": {
       "type": "string"
     }
   },
