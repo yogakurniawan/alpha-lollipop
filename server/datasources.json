@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "mongo-storage": {
-    "host": "52.221.206.121",
+    "host": "13.228.182.12",
     "username": "admin",
     "password": "reactjs1234",
     "port": 30590,
