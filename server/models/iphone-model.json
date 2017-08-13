@@ -1,0 +1,23 @@
+{
+  "name": "IphoneModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Wallpapers": {
+      "type": "hasMany",
+      "model": "Wallpaper",
+      "foreignKey": "iphoneModelId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

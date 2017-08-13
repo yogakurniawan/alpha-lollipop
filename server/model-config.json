@@ -63,5 +63,17 @@
   "item": {
     "dataSource": "mongo-storage",
     "public": true
+  },
+  "IphoneModel": {
+    "dataSource": "mongo-storage",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mongo-storage",
+    "public": true
+  },
+  "Wallpaper": {
+    "dataSource": "mongo-storage",
+    "public": true
   }
 }

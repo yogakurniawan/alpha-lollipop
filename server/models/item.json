@@ -228,8 +228,7 @@
   "relations": {
     "brand": {
       "type": "belongsTo",
-      "model": "brand",
-      "foreignKey": ""
+      "model": "brand"
     }
   },
   "acls": [],

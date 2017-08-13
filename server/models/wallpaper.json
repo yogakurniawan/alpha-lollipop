@@ -1,0 +1,47 @@
+{
+  "name": "Wallpaper",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "original": {
+      "type": "string"
+    },
+    "totalLike": {
+      "type": "number"
+    },
+    "totalDownloaded": {
+      "type": "number"
+    },
+    "totalViewed": {
+      "type": "number"
+    },
+    "categoryId": {
+      "type": "string"
+    },
+    "iphoneModelId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Category": {
+      "type": "belongsTo",
+      "model": "Category"
+    },
+    "IphoneModel": {
+      "type": "belongsTo",
+      "model": "IphoneModel"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
