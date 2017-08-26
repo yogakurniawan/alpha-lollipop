@@ -8,6 +8,12 @@
   "properties": {
     "name": {
       "type": "string"
+    },
+    "total_wallpaper": {
+      "type": "number"
+    },
+    "code": {
+      "type": "string"
     }
   },
   "validations": [],
