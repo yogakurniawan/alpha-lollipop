@@ -15,13 +15,13 @@
     "original": {
       "type": "string"
     },
-    "totalLike": {
+    "total_like": {
       "type": "number"
     },
-    "totalDownloaded": {
+    "total_download": {
       "type": "number"
     },
-    "totalViewed": {
+    "total_view": {
       "type": "number"
     },
     "categoryId": {
