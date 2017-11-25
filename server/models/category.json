@@ -11,6 +11,9 @@
     },
     "total_wallpaper": {
       "type": "number"
+    },
+    "background_image": {
+      "type": "string"
     }
   },
   "validations": [],
